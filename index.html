@@ -3,9 +3,36 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Flowers</title>
+  <title>Glaze Lilies For You</title>
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Overriding the flower petal colors to Glaze Lily Blue */
+    .flower__leaf {
+      /* Gradient: Deep Blue (Base) -> Bright Blue (Middle) -> White/Light Blue (Tip) */
+      background: linear-gradient(to top, #1a2a6c, #4a90e2, #b2d8ff) !important;
+      box-shadow: 0 0 5px rgba(74, 144, 226, 0.5) !important;
+    }
+
+    /* Overriding the center to Glaze Lily Gold */
+    .flower__white-circle {
+      /* Gradient: Gold -> Darker Gold */
+      background: radial-gradient(circle, #ffd700, #b8860b) !important;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.8) !important; 
+      border: none !important;
+    }
+
+    /* Adjusting the lights/reflections to match the blue theme */
+    .flower__light {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(178, 216, 255, 0.1)) !important;
+    }
+    
+    /* Optional: Adjust the connecting lines inside the flower to be subtle blue */
+    .flower__line__leaf {
+      background: linear-gradient(to top, #2c3e50, #4a90e2) !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,13 +41,11 @@
     <div class="sun"></div>
     <div class="night"></div>
     
-    <!-- Headline -->
     <div class="headline">
-      <h1>So many flowers but my favourtite one is you hehe🤭</h1>
+      <h1>So many flowers but my favourite one is you hehe🤭</h1>
       <button class="letter-btn" id="letterBtn">Open Special Letter 💌</button>
     </div>
     
-    <!-- Letter Modal -->
     <div class="letter-modal" id="letterModal">
       <div class="letter-overlay"></div>
       <div class="letter-container">
@@ -36,23 +61,16 @@
               </div>
             </div>
             <div class="letter-text">
-              <p>My Dearest,</p>
-              <p>Like these beautiful flowers that bloom with time and care, our connection grows more beautiful each day. You bring color to my world just like these vibrant petals bring life to the garden.</p>
-              <p>Every moment with you is like watching a flower bloom - magical, precious, and filled with wonder. Thank you for being the sunshine in my life.</p>
-              <p class="signature">With all my love,<br>Your Secret Admirer 💕</p>
-           <!--   <p class="signature">Made by Pinak (Insta @Pinakk.io) For Pinak's Gf </p> -->
+              <p>Hey Princess,</p>
+              <p>It’s National Princess Day, and I know the past couple of days haven’t been your best. Just know this — even on your off days, you’re still the girl who amazes me.</p>
+              <p>You don’t lose your shine just because you’re tired. You don’t stop being loved just because you feel low.</p>
+              <p>I’m proud of you for getting through these days, even if they weren’t easy. Let me be your comfort when you feel off. Let me be your peace when life feels loud.</p>
+              <p class="signature">Happy Princess Day, my hardworking girl.<br>I’m always with you.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <!-- Watermark -->
- <!--
-    <div class="watermark">
-      <p>Made By Pinakk.io</p>
-    </div>
-    -->
     
     <div class="flowers">
       <div class="flower flower--1">
